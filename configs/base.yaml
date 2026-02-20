@@ -1,0 +1,31 @@
+seed: 42
+
+tokenizer:
+  path: artifacts/tokenizer/tokenizer.json
+
+data:
+  corpus_path: data/processed/corpus.txt
+  train_split: 0.9
+
+model:
+  n_embd: 256
+  n_head: 8
+  n_layer: 6
+  dropout: 0.1
+
+training:
+  batch_size: 32
+  block_size: 128
+  max_steps: 2000
+  eval_interval: 200
+  eval_batches: 20
+  learning_rate: 0.0003
+  weight_decay: 0.1
+  grad_clip: 1.0
+  device: auto
+  checkpoint_path: artifacts/checkpoints/model.pt
+
+generation:
+  max_new_tokens: 200
+  temperature: 0.8
+  top_k: 40

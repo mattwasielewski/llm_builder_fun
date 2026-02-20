@@ -1,0 +1,4 @@
+Machine learning systems are software systems that improve with data.
+A language model predicts the next token in a sequence and can generate coherent text.
+Training quality depends on data quality, model capacity, and optimization stability.
+When building practical models, start small, measure often, and iterate quickly.
